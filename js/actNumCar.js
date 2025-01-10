@@ -3,7 +3,7 @@
 import {
     cargarCarritoDeLocalStorage,
     actualizarNumeroProductosCarrito
-} from "./utilidadesCarrito.js"
+} from "./uCarrito.js"
 
 const spanNumeroCarrito = document.querySelector("#numero-carrito")
 

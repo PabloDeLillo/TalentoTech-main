@@ -1,0 +1,100 @@
+/* Estilos del header */
+/*=============================*/
+
+header{
+    background-color: var(--color-black);
+    color: var(--color-baby-powder);
+
+    min-height: 4rem;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    font-size: 1.5rem;
+
+    padding: 0 0.75rem;
+
+    position: relative;
+}
+
+.logo{
+    font-size: 1.5rem;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+
+/*ul dentro del nav*/
+.menu-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/*CLASE DE UTILIDAD PARA MOSTRAR O NO EL UL EN MENU MOVIL*/
+/*Ojo con esto, tiene que tener las dos clases para que funcione !*/
+.menu-links.menu-abierto{
+    display: flex;
+}
+
+
+.menu-links li a{
+    margin-left: 1rem;
+    
+
+}
+
+
+.carrito{
+    margin: 0 1.25rem;
+    padding: 0.75rem;
+}
+
+.menu-movil-btn{
+    margin: 0 1.25rem;
+
+    /*el boton de menu movil está escondido por defecto*/
+    display: none;
+}
+
+
+/*Media queries */
+/*================================================================================================*/
+
+/*OJO, EN 400PX APROX SE PONE FEO EL CARRITO Y EL NUMERO !  🦜🦜🦜🦜🦜⛔ */ 
+
+@media screen and (max-width:768px) {
+    #menu-movil-btn{
+        display: block;
+    }
+
+
+    .menu-links{
+        display: none;
+        position: absolute;
+        padding-top: 2.5rem;
+        top: 4rem;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 4rem);
+        
+        flex-direction: column;
+        justify-content: flex-start;
+        row-gap: 2rem;
+
+
+        z-index: 100;
+
+
+        background-color: var(--color-blue);
+        color: var(--color-baby-powder)
+    }
+}

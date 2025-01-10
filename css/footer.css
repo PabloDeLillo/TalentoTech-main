@@ -1,0 +1,51 @@
+/* Estilos del footer */
+/*========================================*/
+
+#footer{
+    background-color: var(--color-black);
+    color: var(--color-baby-powder);
+
+    padding: 1.5rem;
+    font-size: 1.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer-contenido{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-contenido ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-contenido li{
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.footer-contenido i{
+    font-size: 2rem;
+}
+
+/* Estilos para las imágenes de redes sociales */
+footer .RSocial {
+    width: 40px; /* Ancho de los iconos */
+    margin: 5px; /* Espacio alrededor de cada icono */
+}
+/* MEDIA QUERIES */
+/* ____________________________________________ */
+
+@media screen and (max-width: 767px){
+    #footer{
+        flex-direction: column;
+    }
+
+    .footer-contenido p{
+        text-align: center;
+    }
+}

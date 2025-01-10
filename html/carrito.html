@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drinks | Talento Tech | Oficial</title>
+    <meta name="description" content="Descubre cómo llevar las mejores recetas de bebidas a tu hogar con Talento Tech. Aprende de expertos y realiza tus pedidos de forma sencilla.">
+    <meta name="keywords" content="Talento Tech, bebidas, recetas, bartenders, comunidad de bebidas, pedido online">
+    <meta name="author" content="Talento Tech">
+    <meta property="og:title" content="Drinks | Talento Tech | Oficial">
+    <meta property="og:description" content="Descubre recetas originales y haz tus pedidos de bebidas en Talento Tech. Lleva momentos especiales a tu hogar.">
+    <meta property="og:image" content="../assets/img/logo.jpg">
+    <meta property="og:url" content="https://pablodelillo.github.io/TalentoTech/index.html">
+    <meta property="og:type" content="website">
+
+    <!-- Agrego favicon al navegador-->
+    <link rel="icon" type="image/png" href="../icons/favicon-16x16.png">
+
+    <!--CDN FONTAWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    <!-- Enlace a nuestro archivo de estilos CSS personalizado -->
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/carrito.css">
+    <link rel="stylesheet" href="../css/footer.css">
+ 
+</head>
+
+<body>
+    <div class="contenedor-principal">
+
+        <header>
+            <div class="nav_inicio">
+                <!-- Logo de la empresa -->
+                <img src="../assets/img/logo.jpg" class="Logo" alt="Logo de Talento Tech">
+                <!-- Título o nombre de la empresa -->
+                <h1 class="Titulo"><a href="/index.html" title="Volver al inicio de Talento Tech">Talento Tech</a></h1>
+            </div>
+            <audio id="audio" autoplay controls>
+                <!-- Ruta del archivo de audio -->
+                <source src="../audio/audio.mp3" type="audio/mpeg">
+                Tu navegador no soporta la reproducción de audio.
+            </audio>
+            
+
+            <nav>
+                <ul class="menu-links" id="menu-links">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../index.html#seccion-productos">Productos</a></li>
+                    <li><a href="../html/quienes_somos.html">Acerca de</a></li>
+                    <li><a href="../html/contacto.html">Contacto</a></li>
+                </ul> 
+                <div class="carrito">
+                    <a href="carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <span id="numero-carrito">0</span>
+                </div>
+                <div class="menu-movil-btn" id="menu-movil-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="seccion-productos" id="seccion-productos">
+                <br>
+                <h2>Tu pedido</h2>
+                <br>
+                <div class="contenedor-productos" id="contenedor-productos">
+                    <!-- Productos cargados dinámicamente -->
+                </div>
+                <div id="contenedor-finalizar-compra">
+                    <!-- Botón de finalizar compra generado dinámicamente -->
+                </div>
+            </section>
+
+            <section>
+                <dialog id="dialogo-finalizar-compra">
+                    <p>Estás por comprar estos artículos:</p>
+                    <ul id="lista-articulos-comprar"></ul>
+                    <p>Y vas a gastar $ <span id="total-a-pagar"></span></p>
+                    <p>¿Querés continuar?</p>
+                    <button type="button" id="btn-comprar">Finalizar compra</button>
+                    <button type="button" id="btn-volver-carrito">Vovler</button>
+                </dialog>
+            </section>
+        </main>
+
+        <footer id="footer">
+            <div>
+                <img src="../assets/img/logo.jpg" class="Logo" alt="Logo de Talento Tech">
+                <h1 class="Titulo"><a href="/index.html">Talento Tech</a></h1>
+            </div>
+            <div>
+                <h2 id="redes">Seguinos en nuestras redes:</h2>
+                <img class="RSocial" src="../assets/img/Fcabook.png" alt="Facebook">
+                <img class="RSocial" src="../assets/img/Instagrampng.png" alt="Instagram">
+                <img class="RSocial" src="../assets/img/Twiter.jpg" alt="Twitter">
+                <img class="RSocial" src="../assets/img/Tik tok1.png" alt="TikTok">
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="../js/menu-movil.js"></script>
+    <script type="module" src="../js/actNumCar.js"></script>
+    <script type="module" src="../js/carrito.js"></script>
+    <script>
+        const audioElement = document.getElementById('audio');
+        audioElement.volume = 0.09;
+    </script>
+</body>
+</html>
+
+

@@ -2,7 +2,7 @@ import {
     cargarCarritoDeLocalStorage, 
     guardarCarritoEnLocalStorage,
     calcularProductosCarrito,
-    actualizarNumeroProductosCarrito } from "./utilidadesCarrito.js"
+    actualizarNumeroProductosCarrito } from "./uCarrito.js"
 
 //El span donde se muestra la cantidad de productos que hay en el carrito de compras en el <nav>
 const numeroCarrito = document.getElementById("numero-carrito");
